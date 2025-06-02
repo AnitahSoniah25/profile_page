@@ -5,18 +5,112 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Awesome Profile</title>
         <style>
+            header {
+                color:white ; 
+                font-size: larger; 
+                font-family: 'Times New Roman'; 
+                text-align: center;
+                background-color: darkblue;
+                padding: 20px;
+                h1{
+                    font-size: 100px;
+                }
+                h2{
+                    font-size: larger;
+                    font-style: oblique;
+                }
+            }
+        
+            body {
+                font-family: 'sans-serif'; 
+                margin: 0cm; 
+                background-color:#f0f0f0;
+                padding: 0px;
+            }
+            img {
+                text-align: center;
+                border-radius: 8px;
+                display: block;
+                margin: 0 auto;
+            }
+            section {
+                 margin-bottom: 20px;
+                 padding: 5%;
+            }
+            #About-Me {
+                background-color: white;
+                padding: 20px;
+                
+            }
+            ul {
+                list-style-type: none;
+                padding: 5px 0;
+            }
+            form {
+                padding: 20px;
+                border: 1px solid #ccc;
+                background-color: white;
+                
+                label{
+                    display: block;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+                
+                name{
+                        width: calc(100% - 20px);
+                        padding: 10px;
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        margin-bottom: 15px;  
+                    } 
+                email {
+                        width: calc(100% - 20px);
+                        padding: 10px;
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        margin-bottom: 15px;  
+                    } 
+                message{
+                        width: calc(100% - 20px);
+                        padding: 10px;
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        margin-bottom: 15px;  
+                    } 
+                
+             }
+
+                
+
+
+            
+             button{
+                 background-color: green;
+                 color: white;
+                 padding: 10px 20px;
+                 border: none;
+                 border-radius: 4px;
+                 cursor: pointer;
+             }
+             footer{
+                background-color: darkgray;
+                color: white;
+                text-align: center;
+                padding: 10px;
+             }
 
         </style>
     </head>
 
     <body>
       <header>
-        <h1>Soniah's Profile</h1>
-        <h2>Civil engineer and Aspiring Web Developer & Enthusiast</h2>
+            <h1>Soniah's Profile</h1>
+            <h2>Civil engineer and Aspiring Web Developer & Enthusiast</h2>
       </header>
 
-        <section>
-             <img src="Soniah in her element.jpg" alt="Nafuna Anitah Soniah" width="500" height="600">">
+        <section id="About-Me">
+             <img src="Soniah in her element.jpg" alt="Nafuna Anitah Soniah" width="500" height="600">
             <h4>About me</h4>
             <p>
             I am a highly motivated Civil engineer with particular interest in Highways and Transport engineering. 
@@ -42,23 +136,30 @@
 
             </ul>
         </section>
-        <section>
-            <h3>"Get in Touch!"</h3>
-            <form>
+        <section id="Contact-Me">
+            <h3>Get in Touch</h3>
+            <form id="registration-form">
              <label for="Your-Name">Your Name</label>
-             <input name="Your-Name" id="Your-Name" type="text" placeholder="Enter your full name"> 
+             <input id="name" name="Your-Name" id="Your-Name" type="text" placeholder="Enter your full name"> 
              <br>
              
              <label for="Your-Email">Your Email</label>
-             <input name="Your-Email" id="Your-Email" type="text" placeholder="name@example.com"> 
+             <input id="email" name="Your-Email" id="Your-Email" type="text" placeholder="name@example.com"> 
              <br>
 
              <label for="Your-Message">Your Message</label>
-             <textarea name="Your-Message" id="Your-Message" type="text" placeholder="Type your message here"></textarea>
+             <textarea id="message" name="Your-Message" id="Your-Message" type="text" placeholder="Type your message here"></textarea>
              <br>
+             <button type="submit">Send Message</button>
+
 
             </form>
         </section>
+
+        <footer
+          <p> © 2025 Anitah Soniah. All rights reserved.</p>
+        
+        ></footer>
     
         
 
